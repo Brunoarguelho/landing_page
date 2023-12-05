@@ -260,4 +260,83 @@ footer .setas:active{
     }
 }
 /*-------------------------------*/
-/*redes sociais magica*/
+
+footer .rede-sociais{
+    position: absolute;
+    right: 25px;
+    top: 195px;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+footer .rede-sociais a{
+    text-decoration: none;
+    color: orange;
+    opacity: .7;
+}
+
+footer .rede-sociais .icon-rede{
+    transition: all 0.5s;
+    position: relative;
+}
+
+footer #face:hover{
+   animation: pingar 3s linear infinite;
+   color: #3b5998;
+   background-color: white;
+   -webkit-background-clip: transparent;
+   -moz-background-clip: text;
+   -o-background-clip: text;
+   background-clip: text;
+   border-radius: 60%;
+   transition: all 0.1s;
+}
+footer #insta:hover{
+   animation: pingar 3s linear infinite;
+   color: white;
+   background-color:#E1306C;
+   -webkit-background-clip: transparent;
+   -moz-background-clip: text;
+   -o-background-clip: text;
+   background-clip: text;
+   border-radius: 30%;
+   transition: all 0.1s;
+}
+footer #twi:hover{
+   animation: pingar 3s linear infinite;
+   color: #1DA1F2;
+   background-color: white;
+   -webkit-background-clip: transparent;
+   -moz-background-clip: text;
+   -o-background-clip: text;
+   background-clip: text;
+   border-radius: 10%;
+   transition: all 0.1s;
+}
+footer #wchat:hover{
+   animation: pingar 3s linear infinite;
+   color: #2F8819;
+   background-color: white;
+   -webkit-background-clip: transparent;
+   -moz-background-clip: text;
+   -o-background-clip: text;
+   background-clip: text;
+   border-radius: 20%;
+   transition: all 0.1s;
+}
+
+@keyframes pingar {
+    0% { 
+        top: 0;
+    }
+    50% { 
+        top: -50px; 
+    }
+    100% {
+         top: 0;
+    }
+}
+/*----------------media screen------------------*/
