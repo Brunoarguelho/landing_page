@@ -52,10 +52,11 @@ header img{
     width: 90px;
     height: 90px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 20px;
     border: 2px solid grey;
     margin-left: 20px;
     margin-top: 10px;
+    opacity: 0.8;
 }
 
 header ul{
@@ -124,6 +125,7 @@ main{
     flex-direction: column;
     width: 50%;
     height: 86vh;
+    z-index: 9999;
 }
 
 .elementos h1{
@@ -200,5 +202,62 @@ strong{
 
 footer{
     width: 100%;
+    position: relative;
 }
 
+footer .rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: -251px;
+}
+
+footer .video{
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    transition: all 1s ease-in;
+    overflow: hidden;
+    height: 0;
+    position: absolute;
+    bottom: -250px; /*faz subir conforme a seta*/
+
+}
+
+footer .setas{
+    position: absolute;
+    color: #8e8e8e;
+    font-size: 2.5em;
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+footer #seta1{
+    top: 215px;
+    left: 15.5%;
+}
+
+footer #seta2{
+    top: -37px;
+    left: 15.5%;
+    display: none;
+}
+
+footer .setas:active{
+    color: orange;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*-------------------------------*/
+/*redes sociais magica*/
